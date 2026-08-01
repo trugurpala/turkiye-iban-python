@@ -13,7 +13,7 @@ environment-protected action.
 3. For a rehearsal, repeat the registration on TestPyPI with environment
    `testpypi` and project `turkiye-iban`.
 4. Run **Publish Python package** from GitHub Actions, select `testpypi` first,
-   and enter a tag or commit ref such as `v0.1.1`.
+and enter a tag or commit ref such as `v0.1.2`.
 5. Verify the index page, downloaded artifacts, package metadata, and a clean
    virtual-environment install before selecting `pypi`.
 
