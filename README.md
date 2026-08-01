@@ -30,6 +30,11 @@ python -m build
 python -m twine check dist/*
 ```
 
+PyPI publication uses a manually approved OIDC Trusted Publishing workflow.
+See [PUBLISHING.md](PUBLISHING.md). The GitHub release is available, but the
+public PyPI index entry must be verified separately before claiming that
+`pip install turkiye-iban` is available.
+
 ## License
 
 MIT. See [LICENSE](LICENSE) and [SECURITY.md](SECURITY.md).
