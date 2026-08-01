@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkiye-iban"
+version = "0.1.0"
+description = "Turkish IBAN validation and provider-code lookup."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Ugur Pala" }]
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "mypy>=1.10", "build>=1.2", "twine>=5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+turkiye_iban = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true

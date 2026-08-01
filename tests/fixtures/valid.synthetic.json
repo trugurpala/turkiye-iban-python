@@ -1,0 +1,492 @@
+[
+  {
+    "iban": "TR280000109999000000000001",
+    "providerCode": "00001",
+    "rawCode": "0001",
+    "providerName": "T.C. MERKEZ BANKASI",
+    "synthetic": true
+  },
+  {
+    "iban": "TR270000409999000000000002",
+    "providerCode": "00004",
+    "rawCode": "0004",
+    "providerName": "İLLER BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR520001009999000000000003",
+    "providerCode": "00010",
+    "rawCode": "0010",
+    "providerName": "T.C. ZİRAAT BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR100001209999000000000004",
+    "providerCode": "00012",
+    "rawCode": "0012",
+    "providerName": "T. HALK BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR650001409999000000000005",
+    "providerCode": "00014",
+    "rawCode": "0014",
+    "providerName": "T. SINAİ KALKINMA BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR790001509999000000000006",
+    "providerCode": "00015",
+    "rawCode": "0015",
+    "providerName": "T. VAKIFLAR BANKASI T.A.O.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR930001609999000000000007",
+    "providerCode": "00016",
+    "rawCode": "0016",
+    "providerName": "T. EXİMBANK",
+    "synthetic": true
+  },
+  {
+    "iban": "TR100001709999000000000008",
+    "providerCode": "00017",
+    "rawCode": "0017",
+    "providerName": "T. KALKINMA BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR870002909999000000000009",
+    "providerCode": "00029",
+    "rawCode": "0029",
+    "providerName": "BİRLEŞİK FON BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR860003209999000000000010",
+    "providerCode": "00032",
+    "rawCode": "0032",
+    "providerName": "T. EKONOMİ BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR510004609999000000000011",
+    "providerCode": "00046",
+    "rawCode": "0046",
+    "providerName": "AKBANK T.A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR720005909999000000000012",
+    "providerCode": "00059",
+    "rawCode": "0059",
+    "providerName": "ŞEKERBANK T.A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR860006009999000000000013",
+    "providerCode": "00060",
+    "rawCode": "0060",
+    "providerName": "TÜRK TİCARET BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR440006209999000000000014",
+    "providerCode": "00062",
+    "rawCode": "0062",
+    "providerName": "T. GARANTİ BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR020006409999000000000015",
+    "providerCode": "00064",
+    "rawCode": "0064",
+    "providerName": "T. İŞ BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR980006709999000000000016",
+    "providerCode": "00067",
+    "rawCode": "0067",
+    "providerName": "YAPI VE KREDİ BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR850009109999000000000017",
+    "providerCode": "00091",
+    "rawCode": "0091",
+    "providerName": "ARAP TÜRK BANKASI",
+    "synthetic": true
+  },
+  {
+    "iban": "TR020009209999000000000018",
+    "providerCode": "00092",
+    "rawCode": "0092",
+    "providerName": "CITIBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR420009609999000000000019",
+    "providerCode": "00096",
+    "rawCode": "0096",
+    "providerName": "TURKISH BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR970009809999000000000020",
+    "providerCode": "00098",
+    "rawCode": "0098",
+    "providerName": "JPMORGAN CHASE BANK N.A.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR140009909999000000000021",
+    "providerCode": "00099",
+    "rawCode": "0099",
+    "providerName": "ING BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR540010309999000000000022",
+    "providerCode": "00103",
+    "rawCode": "0103",
+    "providerName": "FİBABANKA A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR380010809999000000000023",
+    "providerCode": "00108",
+    "rawCode": "0108",
+    "providerName": "TURKLAND BANK A.S.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR520010909999000000000024",
+    "providerCode": "00109",
+    "rawCode": "0109",
+    "providerName": "ICBC TURKEY BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR100011109999000000000025",
+    "providerCode": "00111",
+    "rawCode": "0111",
+    "providerName": "QNB FİNANSBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR500011509999000000000026",
+    "providerCode": "00115",
+    "rawCode": "0115",
+    "providerName": "DEUTSCHE BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR640011609999000000000027",
+    "providerCode": "00116",
+    "rawCode": "0116",
+    "providerName": "PASHA YATIRIM BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR480012109999000000000028",
+    "providerCode": "00121",
+    "rawCode": "0121",
+    "providerName": "STANDARD CHARTERED YATIRIM BANKASI TÜRK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR620012209999000000000029",
+    "providerCode": "00122",
+    "rawCode": "0122",
+    "providerName": "SOCIETE GENERALE (SA)",
+    "synthetic": true
+  },
+  {
+    "iban": "TR760012309999000000000030",
+    "providerCode": "00123",
+    "rawCode": "0123",
+    "providerName": "HSBC BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR900012409999000000000031",
+    "providerCode": "00124",
+    "rawCode": "0124",
+    "providerName": "ALTERNATİFBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR070012509999000000000032",
+    "providerCode": "00125",
+    "rawCode": "0125",
+    "providerName": "BURGAN BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR470012909999000000000033",
+    "providerCode": "00129",
+    "rawCode": "0129",
+    "providerName": "BANK OF AMERICA YATIRIM BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR460013209999000000000034",
+    "providerCode": "00132",
+    "rawCode": "0132",
+    "providerName": "İSTANBUL TAKAS VE SAKLAMA BANK. A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR040013409999000000000035",
+    "providerCode": "00134",
+    "rawCode": "0134",
+    "providerName": "DENİZBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR180013509999000000000036",
+    "providerCode": "00135",
+    "rawCode": "0135",
+    "providerName": "ANADOLUBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR730013709999000000000037",
+    "providerCode": "00137",
+    "rawCode": "0137",
+    "providerName": "RABOBANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR870013809999000000000038",
+    "providerCode": "00138",
+    "rawCode": "0138",
+    "providerName": "DİLER YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR040013909999000000000039",
+    "providerCode": "00139",
+    "rawCode": "0139",
+    "providerName": "GSD YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR590014109999000000000040",
+    "providerCode": "00141",
+    "rawCode": "0141",
+    "providerName": "NUROL YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR730014209999000000000041",
+    "providerCode": "00142",
+    "rawCode": "0142",
+    "providerName": "BANKPOZİTİF KREDİ VE KALK.BANK.A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR870014309999000000000042",
+    "providerCode": "00143",
+    "rawCode": "0143",
+    "providerName": "AKTİF YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR860014609999000000000043",
+    "providerCode": "00146",
+    "rawCode": "0146",
+    "providerName": "ODEA BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR030014709999000000000044",
+    "providerCode": "00147",
+    "rawCode": "0147",
+    "providerName": "MUFG BANK TURKEY A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR170014809999000000000045",
+    "providerCode": "00148",
+    "rawCode": "0148",
+    "providerName": "INTESA SANPAOLO S.P.A.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR310014909999000000000046",
+    "providerCode": "00149",
+    "rawCode": "0149",
+    "providerName": "BANK OF CHINA TURKEY A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR450015009999000000000047",
+    "providerCode": "00150",
+    "rawCode": "0150",
+    "providerName": "GOLDEN GLOBAL YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR590015109999000000000048",
+    "providerCode": "00151",
+    "rawCode": "0151",
+    "providerName": "D YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR730015209999000000000049",
+    "providerCode": "00152",
+    "rawCode": "0152",
+    "providerName": "DESTEK YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR870015309999000000000050",
+    "providerCode": "00153",
+    "rawCode": "0153",
+    "providerName": "MİSYON YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR040015409999000000000051",
+    "providerCode": "00154",
+    "rawCode": "0154",
+    "providerName": "TERA YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR180015509999000000000052",
+    "providerCode": "00155",
+    "rawCode": "0155",
+    "providerName": "Q YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR320015609999000000000053",
+    "providerCode": "00156",
+    "rawCode": "0156",
+    "providerName": "HEDEF YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR460015709999000000000054",
+    "providerCode": "00157",
+    "rawCode": "0157",
+    "providerName": "ENPARA BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR600015809999000000000055",
+    "providerCode": "00158",
+    "rawCode": "0158",
+    "providerName": "COLENDİ BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR740015909999000000000056",
+    "providerCode": "00159",
+    "rawCode": "0159",
+    "providerName": "FUPS BANK A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR880016009999000000000057",
+    "providerCode": "00160",
+    "rawCode": "0160",
+    "providerName": "ZİRAAT DİNAMİK BANKA A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR050016109999000000000058",
+    "providerCode": "00161",
+    "rawCode": "0161",
+    "providerName": "AYTEMİZ YATIRIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR510020309999000000000059",
+    "providerCode": "00203",
+    "rawCode": "0203",
+    "providerName": "ALBARAKA TÜRK KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR090020509999000000000060",
+    "providerCode": "00205",
+    "rawCode": "0205",
+    "providerName": "KUVEYT TÜRK KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR230020609999000000000061",
+    "providerCode": "00206",
+    "rawCode": "0206",
+    "providerName": "TÜRKİYE FİNANS KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR220020909999000000000062",
+    "providerCode": "00209",
+    "rawCode": "0209",
+    "providerName": "ZİRAAT KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR360021009999000000000063",
+    "providerCode": "00210",
+    "rawCode": "0210",
+    "providerName": "VAKIF KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR500021109999000000000064",
+    "providerCode": "00211",
+    "rawCode": "0211",
+    "providerName": "TÜRKİYE EMLAK KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR640021209999000000000065",
+    "providerCode": "00212",
+    "rawCode": "0212",
+    "providerName": "HAYAT FİNANS KATILIM BANKASI",
+    "synthetic": true
+  },
+  {
+    "iban": "TR780021309999000000000066",
+    "providerCode": "00213",
+    "rawCode": "0213",
+    "providerName": "T.O.M. KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR920021409999000000000067",
+    "providerCode": "00214",
+    "rawCode": "0214",
+    "providerName": "DÜNYA KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR090021509999000000000068",
+    "providerCode": "00215",
+    "rawCode": "0215",
+    "providerName": "ADİL KATILIM BANKASI A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR600080609999000000000069",
+    "providerCode": "00806",
+    "rawCode": "0806",
+    "providerName": "MERKEZİ KAYIT KURULUŞU A.Ş.",
+    "synthetic": true
+  },
+  {
+    "iban": "TR740080709999000000000070",
+    "providerCode": "00807",
+    "rawCode": "0807",
+    "providerName": "POSTA VE TELGRAF TEŞKİLATI A.Ş.",
+    "synthetic": true
+  }
+]
