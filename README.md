@@ -83,6 +83,7 @@ print(mask_iban(iban))
 
 Detaylı davranış ve sentetik fixture sözleşmesi için ana repository'deki
 [API belgesine](https://github.com/trugurpala/turkiye-iban/blob/main/docs/API.md)
+ve [conformance belgesine](https://github.com/trugurpala/turkiye-iban/tree/main/conformance)
 ve [Python test raporuna](TEST_REPORT.md) bakın.
 
 ## Sonuçları nasıl yorumlamalısınız?
@@ -109,6 +110,7 @@ ve [Python test raporuna](TEST_REPORT.md) bakın.
 ```bash
 python -m pip install -e ".[dev]"
 python -m pytest
+python -m pytest --cov=turkiye_iban --cov-report=term-missing
 python -m mypy src
 python -m build
 python -m twine check dist/*

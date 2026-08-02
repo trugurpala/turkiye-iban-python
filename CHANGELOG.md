@@ -18,6 +18,8 @@
 - PyPI yayınlama rehberi, etiket ve package metadata eşleşmesini açıkça anlatır.
 - İstemci topluluk belgeleri Türkçe, kullanıcı dostu güvenlik ve katkı rehberiyle
   eşitlendi.
+- Ana repository ile fixture byte parity'sini doğrulayan conformance manifesti ve
+  yüzde 90 coverage kalite kapısı eklendi.
 
 ## 0.1.1 - 2026-08-01
 

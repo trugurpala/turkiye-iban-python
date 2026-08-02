@@ -14,7 +14,7 @@ dependencies = []
 classifiers = ["Programming Language :: Python :: 3"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "mypy>=1.10", "build>=1.2", "twine>=5"]
+dev = ["pytest>=8", "pytest-cov>=5", "mypy>=1.10", "build>=1.2", "twine>=5"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -24,6 +24,15 @@ turkiye_iban = ["data/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["turkiye_iban"]
+
+[tool.coverage.report]
+exclude_also = ["if TYPE_CHECKING:"]
+fail_under = 90
+show_missing = true
 
 [tool.mypy]
 python_version = "3.10"
