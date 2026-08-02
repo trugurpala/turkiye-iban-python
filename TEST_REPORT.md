@@ -29,6 +29,7 @@ release assetlerini kaydeder. Testlerde yalnız sentetik IBAN kullanıldı.
 - mypy strict: **hata yok**
 - `python -m build`: wheel ve source archive üretildi
 - `twine check`: **başarılı**
+- İndirilen release wheel'i temiz virtualenv'e kurma smoke testi: **başarılı** (`00001`, maskeleme sonucu doğrulandı)
 - GitHub Actions: Python 3.10, 3.11, 3.12 ve 3.13 matrisi başarılı
 
 Bu kontroller IBAN biçimini, checksum'ı ve kuruluş kodu eşleşmesini test eder;
