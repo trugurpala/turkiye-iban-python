@@ -1,26 +1,52 @@
-# Publishing
+# Yayınlama
 
-The GitHub release workflow builds and attaches wheel/sdist artifacts but does
-not publish to PyPI automatically. Index publication is a deliberate,
-environment-protected action.
+GitHub release iş akışı wheel ve sdist dosyalarını üretip release'e ekler;
+PyPI'ye kendiliğinden yayın yapmaz. Paket indeksine yayın, maintainer onayı ve
+korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
 
-## Trusted publishing setup
+## Yayınlama öncesi koşullar
 
-1. Create a `pypi` environment in this repository and require maintainer approval.
-2. In PyPI, add a pending Trusted Publisher for owner `trugurpala`, repository
-   `turkiye-iban-python`, workflow `publish-pypi.yml`, environment `pypi`, and
-   project `turkiye-iban`.
-3. For a rehearsal, repeat the registration on TestPyPI with environment
-   `testpypi` and project `turkiye-iban`.
-4. Run **Publish Python package** from GitHub Actions, select `testpypi` first,
-and enter a tag or commit ref such as `v0.1.2`.
-5. Verify the index page, downloaded artifacts, package metadata, and a clean
-   virtual-environment install before selecting `pypi`.
+- GitHub'da `pypi` ve gerekirse `testpypi` ortamları oluşturulmalıdır.
+- Her ortam için maintainer onayı ve uygun koruma kuralları tanımlanmalıdır.
+- PyPI veya TestPyPI üzerinde Trusted Publisher kaydı yapılmalıdır.
+- Yayınlanacak commit, `pyproject.toml` içindeki sürümle aynı `vMAJOR.MINOR.PATCH`
+  etiketi taşımalıdır. Örneğin `v0.1.4` etiketi `0.1.4` paket sürümüyle eşleşmelidir.
 
-The workflow uses OIDC and does not store a PyPI token in GitHub secrets. It
-must not be run until the matching Trusted Publisher registration exists.
+## Trusted Publisher kurulumu
 
-The package validates Turkish IBAN structure and checksum and looks up the
-provider code from the pinned dataset. It does not verify account existence,
-account ownership, licensing, or transferability. Examples and tests are
-synthetic only.
+1. Bu repository'de `pypi` ortamını oluşturun ve maintainer onayı isteyin.
+2. PyPI'da owner `trugurpala`, repository `turkiye-iban-python`, workflow
+   `publish-pypi.yml`, environment `pypi` ve project `turkiye-iban` bilgileriyle
+   Trusted Publisher kaydı açın.
+3. Önce TestPyPI üzerinde aynı kurulumu `testpypi` ortamı ve
+   `turkiye-iban` projesiyle prova edin.
+4. GitHub Actions içindeki **Publish Python package** iş akışını çalıştırın;
+   hedefi seçin ve mutlaka `v0.1.4` gibi tam bir sürüm etiketi girin.
+5. Önce TestPyPI sayfasını, indirilen dosyaları, paket metadata'sını ve temiz bir
+   virtualenv kurulumunu doğrulayın. Sonra aynı adımı `pypi` için tekrarlayın.
+
+İş akışı varsayılan olarak `main` dalını kabul etmez. Bu kasıtlı bir güvenlik
+kapısıdır: yayın yalnızca sürüm etiketi ile yapılır ve etiketin paket metadata
+sürümüyle eşleştiği iş akışında kontrol edilir.
+
+İş akışı OIDC kullanır; PyPI token'ı GitHub secret olarak saklamaz. Eşleşen
+Trusted Publisher kaydı ve korumalı ortam hazırlanmadan yayın iş akışını
+çalıştırmayın.
+
+## Yayın sonrası kontrol
+
+- PyPI veya TestPyPI sayfasında sürüm ve metadata'yı açın.
+- Wheel ve sdist dosyalarının beklenen sürümle yayımlandığını kontrol edin.
+- Temiz bir virtualenv içinde `pip install turkiye-iban==SÜRÜM` çalıştırın.
+- `identify_bank_from_iban`, `format_iban` ve `mask_iban` ile sentetik smoke testi
+  yapın.
+- Sonucu `TEST_REPORT.md` ve ana projenin
+  [paket indeks yayın belgesine](https://github.com/trugurpala/turkiye-iban/blob/main/docs/PACKAGE_INDEX_PUBLICATION.md)
+  kaydedin.
+
+## Kapsam ve güvenlik sınırı
+
+Paket Türkiye IBAN yapısını ve kontrol basamaklarını doğrular; sabitlenmiş veri
+kümesinden kuruluş kodu eşleştirir. Hesabın varlığını, hesap sahibini, lisans
+durumunu veya transfer yapılabilirliğini doğrulamaz. Örnek ve testlerde yalnızca
+sentetik IBAN kullanılır.

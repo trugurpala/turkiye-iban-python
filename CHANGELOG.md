@@ -16,6 +16,7 @@
 ## Unreleased
 
 - Reserved for the next unreleased change.
+- PyPI yayınlama rehberi, etiket ve package metadata eşleşmesini açıkça anlatır.
 
 ## 0.1.1 - 2026-08-01
 
