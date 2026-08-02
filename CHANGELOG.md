@@ -15,6 +15,9 @@
 
 ## Yayınlanmamış
 
+- PyPI yayınlama workflow'u, `v0.1.4` gibi eski etiketlerde de coverage kalite
+  kontrolünü çalıştırmak için `pytest-cov` bağımlılığını açıkça kurar.
+
 - PyPI Trusted Publisher değerleri, korumalı GitHub environment'ları ve gerçek
   indeks kontrolü `PUBLISHING.md` içinde belgelendi.
 

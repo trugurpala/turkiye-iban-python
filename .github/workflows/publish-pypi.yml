@@ -32,6 +32,9 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -e ".[dev]"
+      # Keep historical release tags publishable even when their dev extra
+      # predates pytest-cov.
+      - run: python -m pip install "pytest-cov>=5"
       - name: Verify version tag matches package metadata
         shell: bash
         run: |
