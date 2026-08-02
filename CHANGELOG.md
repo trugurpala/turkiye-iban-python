@@ -5,6 +5,7 @@
 - PyPI yayınlama workflow'u, eski etiketlerde de coverage kalite kapısını
   çalıştıracak şekilde düzeltildi.
 - Trusted Publisher ile etiketten yayınlanabilen patch sürümü hazırlandı.
+- `turkiye-iban` `0.1.5` sürümü PyPI'ye OIDC Trusted Publisher ile yayımlandı.
 
 ## 0.1.4 - 2026-08-02
 
