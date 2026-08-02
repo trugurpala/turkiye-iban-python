@@ -1,14 +1,15 @@
 # Python Test Report
 
-Bu rapor, `turkiye-iban-python` istemcisinin public API'sini ve `v0.1.2`
+Bu rapor, `turkiye-iban-python` istemcisinin public API'sini ve `v0.1.4`
 release assetlerini kaydeder. Testlerde yalnız sentetik IBAN kullanıldı.
 
 ## Release kanıtı
 
-- Release: [v0.1.2](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.2)
-- Wheel: `turkiye_iban-0.1.1-py3-none-any.whl`
-- Wheel SHA-256: `0bdcdebf225cde808012252a7f71f6a1ff8a5811400c4393e32d998b474511ef`
-- Source archive SHA-256: `6d341b094f219655374509fcfe16ec01c6a57700c9a7349e2f5137c3709ffc3c`
+- Release: [v0.1.4](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.4)
+- Wheel: `turkiye_iban-0.1.4-py3-none-any.whl`
+- Wheel SHA-256: `3f104bc158729ee7dfa7587d39441140c624ead27f506d6c9b958f23e7a269d0`
+- Source archive: `turkiye_iban-0.1.4.tar.gz`
+- Source archive SHA-256: `10ab8c127b1c8e3f3c86556ec2d4fac3b584bd61abc97f5ca789ce33a8d26932`
 - Paket verisi: `turkiye-iban` v0.2.1 release assetlerinden sabitlenir.
 
 ## Public API
@@ -29,7 +30,7 @@ release assetlerini kaydeder. Testlerde yalnız sentetik IBAN kullanıldı.
 - mypy strict: **hata yok**
 - `python -m build`: wheel ve source archive üretildi
 - `twine check`: **başarılı**
-- İndirilen release wheel'i temiz virtualenv'e kurma smoke testi: **başarılı** (`00001`, maskeleme sonucu doğrulandı)
+- İndirilen `v0.1.4` wheel'i temiz virtualenv'e kurma smoke testi: **başarılı** (`nameOfficial`, `00001`, maskeleme sonucu doğrulandı)
 - GitHub Actions: Python 3.10, 3.11, 3.12 ve 3.13 matrisi başarılı
 
 Bu kontroller IBAN biçimini, checksum'ı ve kuruluş kodu eşleşmesini test eder;
