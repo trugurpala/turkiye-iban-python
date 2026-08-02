@@ -39,11 +39,11 @@ bankada gerçekten var olduğunu kanıtlamaz.
 
 ## Kurulum
 
-`turkiye-iban==0.1.5`, PyPI üzerinde doğrulanmış olarak yayımlandı. Normal
+`turkiye-iban==0.1.6`, PyPI üzerinde doğrulanmış olarak yayımlandı. Normal
 kurulum için sürümü sabitleyin:
 
 ```bash
-python -m pip install turkiye-iban==0.1.5
+python -m pip install turkiye-iban==0.1.6
 ```
 
 PyPI erişiminin uygun olmadığı, kapalı ağ veya artefact doğrulama senaryoları
@@ -124,9 +124,11 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 
 ## Release
 
-Son doğrulanmış GitHub Release [v0.1.6](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.6)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.5`tir.
+Son doğrulanmış GitHub Release [v0.1.6](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.6)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.6`dır.
 `v0.1.6` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır;
-[TEST_REPORT.md](TEST_REPORT.md) ise `v0.1.5` için arşivlenmiş paket doğrulama
+kanıtını korur.
+[TEST_REPORT.md](TEST_REPORT.md), `v0.1.6` için registry, artefact ve sentetik
+smoke testi kanıtını kaydeder.
 kanıtını korur.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
