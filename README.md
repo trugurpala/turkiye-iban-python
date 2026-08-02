@@ -44,7 +44,7 @@ PyPI kaydı henüz doğrulanmadığı için bugün doğrulanmış GitHub release
 assetini kullanın:
 
 ```bash
-python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.3/turkiye_iban-0.1.3-py3-none-any.whl
+python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.4/turkiye_iban-0.1.4-py3-none-any.whl
 ```
 
 PyPI kaydı doğrulandıktan sonra kısa kurulum yolu şu olacaktır:
@@ -65,7 +65,7 @@ iban = "TR280000109999000000000001"  # yalnızca sentetik örnek
 result = identify_bank_from_iban(iban)
 
 if result["parsed"]["is_valid"] and result["provider_status"] == "known":
-    print(result["provider"]["name_official"])
+    print(result["provider"]["nameOfficial"])
 
 print(mask_iban(iban))
 ```
@@ -121,7 +121,7 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 
 ## Release
 
-Son doğrulanmış release [v0.1.3](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.3)'dir.
+Son doğrulanmış release [v0.1.4](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.4)'dir.
 Release assetleri ve test sonucu [TEST_REPORT.md](TEST_REPORT.md) içinde kayıtlıdır.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI

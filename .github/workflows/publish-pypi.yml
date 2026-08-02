@@ -11,7 +11,7 @@ on:
           - testpypi
           - pypi
       ref:
-        description: "Version tag containing the package to publish, for example v0.1.3"
+        description: "Version tag containing the package to publish, for example v0.1.4"
         required: true
         default: main
         type: string
@@ -37,7 +37,7 @@ jobs:
         run: |
           case "${{ inputs.ref }}" in
             v[0-9]*.[0-9]*.[0-9]*) ;;
-            *) echo "The publish ref must be a version tag such as v0.1.3."; exit 1 ;;
+            *) echo "The publish ref must be a version tag such as v0.1.4."; exit 1 ;;
           esac
           VERSION="${{ inputs.ref }}"
           VERSION="${VERSION#v}"

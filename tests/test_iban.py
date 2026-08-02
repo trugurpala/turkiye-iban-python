@@ -12,7 +12,9 @@ def test_known_synthetic_iban() -> None:
     assert validate_turkish_iban(iban)
     assert format_iban(iban) == "TR28 0000 1099 9900 0000 0000 01"
     assert mask_iban(iban) == "TR28 **** **** **** **** **00 01"
-    assert identify_bank_from_iban(iban)["provider_status"] == "known"
+    result = identify_bank_from_iban(iban)
+    assert result["provider_status"] == "known"
+    assert result["provider"]["nameOfficial"] == "T.C. MERKEZ BANKASI"
 
 
 def test_unknown_provider_is_not_invalidated() -> None:
