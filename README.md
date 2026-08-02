@@ -39,17 +39,18 @@ bankada gerçekten var olduğunu kanıtlamaz.
 
 ## Kurulum
 
-PyPI kaydı henüz doğrulanmadığı için bugün doğrulanmış GitHub release wheel
-assetini kullanın:
+`turkiye-iban==0.1.5`, PyPI üzerinde doğrulanmış olarak yayımlandı. Normal
+kurulum için sürümü sabitleyin:
+
+```bash
+python -m pip install turkiye-iban==0.1.5
+```
+
+PyPI erişiminin uygun olmadığı, kapalı ağ veya artefact doğrulama senaryoları
+için aynı sürümün GitHub Release wheel dosyasını kullanabilirsiniz:
 
 ```bash
 python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.5/turkiye_iban-0.1.5-py3-none-any.whl
-```
-
-PyPI kaydı doğrulandıktan sonra kısa kurulum yolu şu olacaktır:
-
-```bash
-python -m pip install turkiye-iban
 ```
 
 Güncel durum ve Trusted Publisher adımları için [PUBLISHING.md](PUBLISHING.md)
@@ -98,6 +99,7 @@ ve [Python test raporuna](TEST_REPORT.md) bakın.
 
 - Ana veri ve TypeScript/NPM paket: [trugurpala/turkiye-iban](https://github.com/trugurpala/turkiye-iban)
 - Aynı sözleşmenin PHP istemcisi: [turkiye-iban-php](https://github.com/trugurpala/turkiye-iban-php)
+- Genel sorular ve diller arası konular: [ana Discussions](https://github.com/trugurpala/turkiye-iban/discussions)
 - Ortak veri kaynakları: [DATA_SOURCES.md](https://github.com/trugurpala/turkiye-iban/blob/main/DATA_SOURCES.md)
 - Güvenlik bildirimi: [SECURITY.md](SECURITY.md)
 - Katkı rehberi: [CONTRIBUTING.md](CONTRIBUTING.md)
