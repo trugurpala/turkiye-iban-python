@@ -8,6 +8,8 @@
 Python 3.10+ istemcisi: Türkiye IBAN normalleştirme, doğrulama, biçimlendirme,
 maskeleme ve kuruluş kodu eşleştirmesi.
 
+[Ne yapar?](#ne-yapar) · [Kurulum](#kurulum) · [Hızlı kullanım](#hızlı-kullanım) · [Public API](#public-api) · [Test ve kalite](#geliştirme-ve-kalite) · [Topluluk](#ilgili-projeler)
+
 > **Önemli sınır**
 > Bu paket IBAN biçimini ve MOD 97-10 kontrolünü doğrular; hesabın varlığını,
 > hesap sahibini, lisans durumunu veya transfer yapılabilirliğini doğrulamaz.
@@ -22,13 +24,27 @@ maskeleme ve kuruluş kodu eşleştirmesi.
 - IBAN'ı dörder karakterlik gruplara ayırır veya maskeleyerek gösterir.
 - Veriyi runtime sırasında ağdan indirmez; `turkiye-iban` v0.2.1 release verisini kullanır.
 
+## Ne yapmaz?
+
+- Hesabın varlığını, sahibini, bakiyesini veya transfer yapılabilirliğini doğrulamaz.
+- TCMB, banka veya ödeme kuruluşu adına resmî onay ya da hesap doğrulama sunmaz.
+- Gerçek IBAN, müşteri kaydı veya kişisel finansal veri toplamaz.
+- `provider_status: "unknown"` sonucunda otomatik kuruluş seçimi yapmaz.
+
+## Türkiye IBAN yapısı
+
+Türkiye IBAN'ı `TR` ülke kodu, iki kontrol rakamı, beş haneli kuruluş kodu,
+bir rezerv rakamı ve 16 karakterlik hesap alanından oluşur. `MOD 97-10`,
+IBAN'ın yazım bütünlüğünü matematiksel olarak kontrol eder; bir hesabın
+bankada gerçekten var olduğunu kanıtlamaz.
+
 ## Kurulum
 
 PyPI kaydı henüz doğrulanmadığı için bugün doğrulanmış GitHub release wheel
 assetini kullanın:
 
 ```bash
-python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.2/turkiye_iban-0.1.1-py3-none-any.whl
+python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.3/turkiye_iban-0.1.3-py3-none-any.whl
 ```
 
 PyPI kaydı doğrulandıktan sonra kısa kurulum yolu şu olacaktır:
@@ -70,6 +86,14 @@ Detaylı davranış ve sentetik fixture sözleşmesi için ana repository'deki
 [API belgesine](https://github.com/trugurpala/turkiye-iban/blob/main/docs/API.md)
 ve [Python test raporuna](TEST_REPORT.md) bakın.
 
+## Sonuçları nasıl yorumlamalısınız?
+
+| Sonuç | Anlamı | Uygulama davranışı |
+| --- | --- | --- |
+| `parsed["is_valid"] == False` | IBAN yapısı veya kontrol rakamları hatalıdır | IBAN'ı kabul etmeyin |
+| `parsed["is_valid"] == True`, `provider_status == "known"` | Kuruluş kodu veri kümesinde bulunur | Kuruluşu otomatik doldurabilirsiniz |
+| `parsed["is_valid"] == True`, `provider_status == "unknown"` | IBAN biçimsel olarak geçerli, kod bu veri sürümünde yoktur | Kuruluşu otomatik seçmeyin; kendi iş kuralınızı uygulayın |
+
 ## İlgili projeler
 
 - Ana veri ve TypeScript/NPM paket: [trugurpala/turkiye-iban](https://github.com/trugurpala/turkiye-iban)
@@ -97,9 +121,11 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 
 ## Release
 
-Son doğrulanmış release [v0.1.2](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.2)'dir.
+Son doğrulanmış release [v0.1.3](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.3)'dir.
 Release assetleri ve test sonucu [TEST_REPORT.md](TEST_REPORT.md) içinde kayıtlıdır.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
+GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
+yayını ise ayrı, ortam korumalı Trusted Publisher workflow'unda yapılır.
 
 ## Divan ile üretildi
 
