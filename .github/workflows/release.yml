@@ -2,11 +2,9 @@ name: Release
 on:
   push:
     tags: ['v*.*.*']
-  workflow_dispatch:
 jobs:
-  publish:
+  package:
     runs-on: ubuntu-latest
-    permissions: { id-token: write, contents: write }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -15,7 +13,24 @@ jobs:
       - run: python -m pip install -e ".[dev]"
       - run: python -m pytest
       - run: python -m mypy src
-      - run: python -m build
+      - run: python -m build --sdist --wheel --outdir dist
       - run: python -m twine check dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-release-dist
+          path: dist/*
+  release:
+    needs: package
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: python-release-dist
+          path: dist
       - uses: softprops/action-gh-release@v2
-        with: { generate_release_notes: true, files: dist/* }
+        with:
+          generate_release_notes: true
+          files: dist/*

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.3 - 2026-08-02
+
+- Aligns package metadata with the `v0.1.3` GitHub release.
+- Makes GitHub Release creation tag-only and scopes write permission to the
+  publishing job.
+- Requires the PyPI publishing workflow to receive a matching version tag.
+
+## Unreleased
+
+- Reserved for the next unreleased change.
+
 ## 0.1.1 - 2026-08-01
 
 - Aligns the package metadata version with the `v0.1.1` client release line.
