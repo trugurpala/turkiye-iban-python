@@ -1,3 +1,10 @@
-# Security
+# Güvenlik
 
-Do not report real IBANs, names, account details, or production logs in issues. Report vulnerabilities privately through GitHub private vulnerability reporting. The library performs format and checksum checks only; never treat it as account or transfer verification.
+Issue, PR, test, fixture veya log içine gerçek IBAN, ad-soyad, hesap bilgisi,
+müşteri kaydı ya da üretim verisi koymayın. Güvenlik açığını public issue olarak
+açmak yerine GitHub private vulnerability reporting üzerinden bildirin.
+
+Bu istemci yalnızca Türkiye IBAN biçimini ve kontrol basamaklarını doğrular;
+hesabın varlığını, hesap sahibini veya transfer yapılabilirliğini doğrulamaz.
+`providerStatus: "known"` yalnızca sabitlenmiş veri kümesinde kuruluş kodu
+eşleşmesi bulunduğunu ifade eder.
