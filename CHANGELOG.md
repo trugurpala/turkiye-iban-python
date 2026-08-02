@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4 - 2026-08-02
+
+- Corrects the Python README example to use the canonical `nameOfficial`
+  provider field.
+- Adds a regression assertion for the documented provider name field.
+
 ## 0.1.3 - 2026-08-02
 
 - Aligns package metadata with the `v0.1.3` GitHub release.
