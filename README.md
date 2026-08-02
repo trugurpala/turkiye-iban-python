@@ -3,7 +3,6 @@
 [![CI](https://github.com/trugurpala/turkiye-iban-python/actions/workflows/ci.yml/badge.svg)](https://github.com/trugurpala/turkiye-iban-python/actions/workflows/ci.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/trugurpala/turkiye-iban-python)](https://github.com/trugurpala/turkiye-iban-python/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Divan ile üretildi](https://img.shields.io/badge/Divan%20ile-%C3%BCretildi-087F8C)](https://github.com/trugurpala/divan)
 
 Python 3.10+ istemcisi: Türkiye IBAN normalleştirme, doğrulama, biçimlendirme,
 maskeleme ve kuruluş kodu eşleştirmesi.
@@ -126,12 +125,6 @@ Release assetleri ve test sonucu [TEST_REPORT.md](TEST_REPORT.md) içinde kayıt
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
 yayını ise ayrı, ortam korumalı Trusted Publisher workflow'unda yapılır.
-
-## Divan ile üretildi
-
-Bu proje [Divan](https://github.com/trugurpala/divan) ile tasarlandı ve üretildi.
-Divan runtime bağımlılığı değildir; paket çalışırken Divan'a veya ağ servisine
-ihtiyaç duymaz.
 
 ## Lisans
 
