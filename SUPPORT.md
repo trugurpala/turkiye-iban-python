@@ -1,10 +1,11 @@
-# Support
+# Destek
 
-- Usage and API: [README.md](README.md) and [TEST_REPORT.md](TEST_REPORT.md)
-- Publishing: [PUBLISHING.md](PUBLISHING.md)
-- Shared data and schema: [main repository](https://github.com/trugurpala/turkiye-iban)
-- Questions and cross-language topics: [main Discussions](https://github.com/trugurpala/turkiye-iban/discussions)
-- Bugs: use the [issue forms](https://github.com/trugurpala/turkiye-iban-python/issues/new/choose)
-- Security: follow [SECURITY.md](SECURITY.md) and do not open a public issue
+- Kullanım ve API: [README.md](README.md) ve [TEST_REPORT.md](TEST_REPORT.md)
+- PyPI release: [PUBLISHING.md](PUBLISHING.md)
+- Ortak veri ve şema: [ana repository](https://github.com/trugurpala/turkiye-iban)
+- Soru ve diller arası konular: [ana Discussions](https://github.com/trugurpala/turkiye-iban/discussions)
+- Hata bildirimi: [issue formları](https://github.com/trugurpala/turkiye-iban-python/issues/new/choose)
+- Güvenlik: [SECURITY.md](SECURITY.md); public issue açmayın
 
-Never include real IBANs, customer records, account holders, or production logs.
+Destek talebinde gerçek IBAN, müşteri kaydı, hesap sahibi veya üretim logu
+paylaşmayın. Yeniden üretim için sentetik örnek ve sürüm bilgisi yeterlidir.

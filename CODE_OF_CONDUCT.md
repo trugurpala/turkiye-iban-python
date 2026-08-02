@@ -1,3 +1,9 @@
-# Code of Conduct
+# Davranış Kuralları
 
-Contributors must be respectful, constructive, and careful with financial privacy. Harassment, personal data, and real account information are not permitted.
+Katkı verenler saygılı, yapıcı ve finansal gizlilik konusunda dikkatli
+davranmalıdır. Taciz, kişisel veri, gerçek hesap bilgisi ve ayrımcı davranış
+kabul edilmez.
+
+Sorun yaşarsanız maintainer'a özel kanaldan bildirin. Katılım, bu repository'nin
+teknik kapsamına ve [SECURITY.md](SECURITY.md) gizlilik kurallarına uygun
+olmalıdır.
