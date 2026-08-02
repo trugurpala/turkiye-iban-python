@@ -2,7 +2,7 @@
 
 ## PyPI verification status
 
-Verification on 2026-08-02 confirms `turkiye-iban` version `0.1.5` is indexed at
+Verification on 2026-08-02 confirms `turkiye-iban` version `0.1.6` is indexed at
 `https://pypi.org/project/turkiye-iban/`.
 GitHub environments `pypi` and `testpypi` now exist and require approval
 from `trugurpala`.
@@ -15,7 +15,7 @@ The PyPI Trusted Publisher registration is active with these exact values:
 - environment: `pypi` (or `testpypi` for a rehearsal)
 - project: `turkiye-iban`
 
-The protected `pypi` workflow published `v0.1.5` through OIDC after the build,
+The protected `pypi` workflow published `v0.1.6` through OIDC after the build,
 pytest, coverage, mypy, package build, and Twine checks passed. A clean
 virtualenv install and synthetic IBAN smoke test also passed.
 
@@ -30,7 +30,7 @@ korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
 - PyPI veya TestPyPI üzerinde Trusted Publisher kaydı yapılmalıdır. PyPI için
   `turkiye-iban` Trusted Publisher kaydı artık aktiftir.
 - Yayınlanacak commit, `pyproject.toml` içindeki sürümle aynı `vMAJOR.MINOR.PATCH`
-  etiketi taşımalıdır. Örneğin `v0.1.5` etiketi `0.1.5` paket sürümüyle eşleşmelidir.
+  etiketi taşımalıdır. Örneğin `v0.1.6` etiketi `0.1.6` paket sürümüyle eşleşmelidir.
 
 ## Trusted Publisher kurulumu
 
@@ -40,12 +40,14 @@ korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
    Trusted Publisher kaydı açın.
 3. Önce TestPyPI üzerinde aynı kurulumu `testpypi` ortamı ve
    `turkiye-iban` projesiyle prova edin.
-4. GitHub Actions içindeki **Publish Python package** iş akışını çalıştırın;
-   hedefi seçin ve mutlaka `v0.1.5` gibi tam bir sürüm etiketi girin.
+4. GitHub Actions içindeki **Publish Python package** iş akışını çalıştırırken
+   ekranın üstündeki workflow ref'i olarak sürüm etiketini seçin ve `ref`
+   girdisine aynı etiketi yazın; örneğin her iki yerde de `v0.1.6` kullanın.
 5. Önce TestPyPI sayfasını, indirilen dosyaları, paket metadata'sını ve temiz bir
    virtualenv kurulumunu doğrulayın. Sonra aynı adımı `pypi` için tekrarlayın.
 
-İş akışı varsayılan olarak `main` dalını kabul etmez. Bu kasıtlı bir güvenlik
+İş akışının çalıştırıldığı ref de sürüm etiketi olmalıdır; `pypi` environment'ı
+yalnız `v*.*.*` tag'lerinden dağıtıma izin verir. Bu kasıtlı bir güvenlik
 kapısıdır: yayın yalnızca sürüm etiketi ile yapılır ve etiketin paket metadata
 sürümüyle eşleştiği iş akışında kontrol edilir.
 
