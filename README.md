@@ -8,7 +8,7 @@
 Python 3.10+ istemcisi: Türkiye IBAN normalleştirme, doğrulama, biçimlendirme,
 maskeleme ve kuruluş kodu eşleştirmesi.
 
-> [!IMPORTANT]
+> **Önemli sınır**
 > Bu paket IBAN biçimini ve MOD 97-10 kontrolünü doğrular; hesabın varlığını,
 > hesap sahibini, lisans durumunu veya transfer yapılabilirliğini doğrulamaz.
 > `provider_status: "unknown"`, checksum hatası değil, kodun sabitlenmiş veri
