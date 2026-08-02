@@ -14,6 +14,7 @@ Python uygulamasını kapsar. Kanonik kuruluş verisi ana repository'de tutulur.
 
 ```bash
 python -m pytest
+python -m pytest --cov=turkiye_iban --cov-report=term-missing
 python -m mypy src
 python -m build --sdist --wheel
 python -m twine check dist/*

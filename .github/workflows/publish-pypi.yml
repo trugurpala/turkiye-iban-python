@@ -43,7 +43,7 @@ jobs:
           VERSION="${VERSION#v}"
           PACKAGE_VERSION="$(python -c "import pathlib, re; print(re.search(r'^version = \"([^\"]+)\"$', pathlib.Path('pyproject.toml').read_text(), re.M).group(1))")"
           test "$VERSION" = "$PACKAGE_VERSION"
-      - run: python -m pytest
+      - run: python -m pytest --cov=turkiye_iban --cov-report=term-missing
       - run: python -m mypy src
       - run: python -m build --sdist --wheel --outdir dist
       - run: python -m twine check dist/*
