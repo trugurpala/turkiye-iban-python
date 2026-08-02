@@ -15,6 +15,9 @@
 
 ## Yayınlanmamış
 
+- PyPI Trusted Publisher değerleri, korumalı GitHub environment'ları ve gerçek
+  indeks kontrolü `PUBLISHING.md` içinde belgelendi.
+
 - PyPI yayınlama rehberi, etiket ve package metadata eşleşmesini açıkça anlatır.
 - İstemci topluluk belgeleri Türkçe, kullanıcı dostu güvenlik ve katkı rehberiyle
   eşitlendi.

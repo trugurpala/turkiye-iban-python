@@ -1,5 +1,25 @@
 # Yayınlama
 
+## PyPI verification status
+
+Verification on 2026-08-02 returned HTTP 404 for
+`https://pypi.org/pypi/turkiye-iban/json`; the project is not indexed yet.
+GitHub environments `pypi` and `testpypi` now exist and require approval
+from `trugurpala`.
+
+Register these exact Trusted Publisher values before running the workflow:
+
+- owner: `trugurpala`
+- repository: `turkiye-iban-python`
+- workflow: `publish-pypi.yml`
+- environment: `pypi` (or `testpypi` for a rehearsal)
+- project: `turkiye-iban`
+
+Use the official [PyPI Trusted Publisher configuration](https://pypi.org/manage/project/turkiye-iban/settings/publishing/)
+page, run TestPyPI first, then run the protected `pypi` workflow with tag
+`v0.1.4`. Only after a clean `pip install turkiye-iban==0.1.4` smoke test
+should the README installation claim be changed.
+
 GitHub release iş akışı wheel ve sdist dosyalarını üretip release'e ekler;
 PyPI'ye kendiliğinden yayın yapmaz. Paket indeksine yayın, maintainer onayı ve
 korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
