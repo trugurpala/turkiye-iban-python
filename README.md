@@ -125,11 +125,9 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 ## Release
 
 Son doğrulanmış GitHub Release [v0.1.6](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.6)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.6`dır.
-`v0.1.6` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır;
-kanıtını korur.
+`v0.1.6` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır.
 [TEST_REPORT.md](TEST_REPORT.md), `v0.1.6` için registry, artefact ve sentetik
 smoke testi kanıtını kaydeder.
-kanıtını korur.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
 yayını ise ayrı, ortam korumalı Trusted Publisher workflow'unda yapılır.
