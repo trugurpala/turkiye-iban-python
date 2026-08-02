@@ -2,12 +2,12 @@
 
 ## PyPI verification status
 
-Verification on 2026-08-02 returned HTTP 404 for
-`https://pypi.org/pypi/turkiye-iban/json`; the project is not indexed yet.
+Verification on 2026-08-02 confirms `turkiye-iban` version `0.1.5` is indexed at
+`https://pypi.org/project/turkiye-iban/`.
 GitHub environments `pypi` and `testpypi` now exist and require approval
 from `trugurpala`.
 
-Register these exact Trusted Publisher values before running the workflow:
+The PyPI Trusted Publisher registration is active with these exact values:
 
 - owner: `trugurpala`
 - repository: `turkiye-iban-python`
@@ -15,10 +15,9 @@ Register these exact Trusted Publisher values before running the workflow:
 - environment: `pypi` (or `testpypi` for a rehearsal)
 - project: `turkiye-iban`
 
-Use the official [PyPI Trusted Publisher configuration](https://pypi.org/manage/project/turkiye-iban/settings/publishing/)
-page, run TestPyPI first, then run the protected `pypi` workflow with tag
-`v0.1.5`. Only after a clean `pip install turkiye-iban==0.1.5` smoke test
-should the README installation claim be changed.
+The protected `pypi` workflow published `v0.1.5` through OIDC after the build,
+pytest, coverage, mypy, package build, and Twine checks passed. A clean
+virtualenv install and synthetic IBAN smoke test also passed.
 
 GitHub release iş akışı wheel ve sdist dosyalarını üretip release'e ekler;
 PyPI'ye kendiliğinden yayın yapmaz. Paket indeksine yayın, maintainer onayı ve
@@ -28,7 +27,8 @@ korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
 
 - GitHub'da `pypi` ve gerekirse `testpypi` ortamları oluşturulmalıdır.
 - Her ortam için maintainer onayı ve uygun koruma kuralları tanımlanmalıdır.
-- PyPI veya TestPyPI üzerinde Trusted Publisher kaydı yapılmalıdır.
+- PyPI veya TestPyPI üzerinde Trusted Publisher kaydı yapılmalıdır. PyPI için
+  `turkiye-iban` Trusted Publisher kaydı artık aktiftir.
 - Yayınlanacak commit, `pyproject.toml` içindeki sürümle aynı `vMAJOR.MINOR.PATCH`
   etiketi taşımalıdır. Örneğin `v0.1.5` etiketi `0.1.5` paket sürümüyle eşleşmelidir.
 
