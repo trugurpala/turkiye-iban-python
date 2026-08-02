@@ -17,7 +17,7 @@ Register these exact Trusted Publisher values before running the workflow:
 
 Use the official [PyPI Trusted Publisher configuration](https://pypi.org/manage/project/turkiye-iban/settings/publishing/)
 page, run TestPyPI first, then run the protected `pypi` workflow with tag
-`v0.1.4`. Only after a clean `pip install turkiye-iban==0.1.4` smoke test
+`v0.1.5`. Only after a clean `pip install turkiye-iban==0.1.5` smoke test
 should the README installation claim be changed.
 
 GitHub release iş akışı wheel ve sdist dosyalarını üretip release'e ekler;
@@ -30,7 +30,7 @@ korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
 - Her ortam için maintainer onayı ve uygun koruma kuralları tanımlanmalıdır.
 - PyPI veya TestPyPI üzerinde Trusted Publisher kaydı yapılmalıdır.
 - Yayınlanacak commit, `pyproject.toml` içindeki sürümle aynı `vMAJOR.MINOR.PATCH`
-  etiketi taşımalıdır. Örneğin `v0.1.4` etiketi `0.1.4` paket sürümüyle eşleşmelidir.
+  etiketi taşımalıdır. Örneğin `v0.1.5` etiketi `0.1.5` paket sürümüyle eşleşmelidir.
 
 ## Trusted Publisher kurulumu
 
@@ -41,7 +41,7 @@ korumalı bir GitHub ortamı gerektiren ayrı bir adımdır.
 3. Önce TestPyPI üzerinde aynı kurulumu `testpypi` ortamı ve
    `turkiye-iban` projesiyle prova edin.
 4. GitHub Actions içindeki **Publish Python package** iş akışını çalıştırın;
-   hedefi seçin ve mutlaka `v0.1.4` gibi tam bir sürüm etiketi girin.
+   hedefi seçin ve mutlaka `v0.1.5` gibi tam bir sürüm etiketi girin.
 5. Önce TestPyPI sayfasını, indirilen dosyaları, paket metadata'sını ve temiz bir
    virtualenv kurulumunu doğrulayın. Sonra aynı adımı `pypi` için tekrarlayın.
 

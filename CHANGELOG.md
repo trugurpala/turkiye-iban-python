@@ -1,5 +1,11 @@
 # Değişiklik Günlüğü
 
+## 0.1.5 - 2026-08-02
+
+- PyPI yayınlama workflow'u, eski etiketlerde de coverage kalite kapısını
+  çalıştıracak şekilde düzeltildi.
+- Trusted Publisher ile etiketten yayınlanabilen patch sürümü hazırlandı.
+
 ## 0.1.4 - 2026-08-02
 
 - Python README örneği canonical `nameOfficial` kuruluş alanını kullanacak
