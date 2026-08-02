@@ -1,5 +1,20 @@
 # Değişiklik Günlüğü
 
+## Yayınlanmamış
+
+- Windows `CRLF` checkout'larında conformance fixture hash doğrulamasının
+  kanonik `LF` içeriğe göre çalışması sağlandı; fixture verisi ve manifest
+  değişmedi.
+- README, doğrulanmış `turkiye-iban==0.1.5` PyPI kurulumunu öne çıkaracak ve
+  ana Discussions alanını gösterecek şekilde düzeltildi.
+- PyPI Trusted Publisher değerleri, korumalı GitHub environment'ları ve gerçek
+  indeks kontrolü `PUBLISHING.md` içinde belgelendi.
+- PyPI yayınlama rehberi, etiket ve package metadata eşleşmesini açıkça anlatır.
+- İstemci topluluk belgeleri Türkçe, kullanıcı dostu güvenlik ve katkı rehberiyle
+  eşitlendi.
+- Ana repository ile fixture byte parity'sini doğrulayan conformance manifesti ve
+  yüzde 90 coverage kalite kapısı eklendi.
+
 ## 0.1.5 - 2026-08-02
 
 - PyPI yayınlama workflow'u, eski etiketlerde de coverage kalite kapısını
@@ -19,20 +34,6 @@
 - GitHub Release oluşturma yalnızca sürüm etiketiyle çalışacak şekilde
   sınırlandırıldı ve yazma yetkisi yayın job'ına taşındı.
 - PyPI yayınlama workflow'unda eşleşen sürüm etiketi zorunlu kılındı.
-
-## Yayınlanmamış
-
-- PyPI yayınlama workflow'u, `v0.1.4` gibi eski etiketlerde de coverage kalite
-  kontrolünü çalıştırmak için `pytest-cov` bağımlılığını açıkça kurar.
-
-- PyPI Trusted Publisher değerleri, korumalı GitHub environment'ları ve gerçek
-  indeks kontrolü `PUBLISHING.md` içinde belgelendi.
-
-- PyPI yayınlama rehberi, etiket ve package metadata eşleşmesini açıkça anlatır.
-- İstemci topluluk belgeleri Türkçe, kullanıcı dostu güvenlik ve katkı rehberiyle
-  eşitlendi.
-- Ana repository ile fixture byte parity'sini doğrulayan conformance manifesti ve
-  yüzde 90 coverage kalite kapısı eklendi.
 
 ## 0.1.1 - 2026-08-01
 
