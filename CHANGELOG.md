@@ -2,6 +2,8 @@
 
 ## Yayınlanmamış
 
+## 0.1.6 - 2026-08-02
+
 - Windows `CRLF` checkout'larında conformance fixture hash doğrulamasının
   kanonik `LF` içeriğe göre çalışması sağlandı; fixture verisi ve manifest
   değişmedi.
