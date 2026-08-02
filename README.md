@@ -50,7 +50,7 @@ PyPI erişiminin uygun olmadığı, kapalı ağ veya artefact doğrulama senaryo
 için aynı sürümün GitHub Release wheel dosyasını kullanabilirsiniz:
 
 ```bash
-python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.5/turkiye_iban-0.1.5-py3-none-any.whl
+python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.6/turkiye_iban-0.1.6-py3-none-any.whl
 ```
 
 Güncel durum ve Trusted Publisher adımları için [PUBLISHING.md](PUBLISHING.md)
@@ -124,8 +124,10 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 
 ## Release
 
-Son doğrulanmış release [v0.1.5](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.5)'dir.
-Release assetleri ve test sonucu [TEST_REPORT.md](TEST_REPORT.md) içinde kayıtlıdır.
+Son doğrulanmış GitHub Release [v0.1.6](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.6)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.5`tir.
+`v0.1.6` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır;
+[TEST_REPORT.md](TEST_REPORT.md) ise `v0.1.5` için arşivlenmiş paket doğrulama
+kanıtını korur.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
 yayını ise ayrı, ortam korumalı Trusted Publisher workflow'unda yapılır.
