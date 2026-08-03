@@ -60,6 +60,6 @@ def test_conformance_digest_is_stable_for_windows_line_endings() -> None:
 def test_readme_uses_verified_pypi_install_and_central_discussions() -> None:
     readme = README.read_text(encoding="utf-8")
 
-    assert "python -m pip install turkiye-iban==0.1.6" in readme
+    assert "python -m pip install turkiye-iban==0.1.7" in readme
     assert "PyPI kaydı henüz doğrulanmadığı" not in readme
     assert "https://github.com/trugurpala/turkiye-iban/discussions" in readme
