@@ -1,5 +1,6 @@
 from turkiye_iban import (
     format_iban,
+    get_bank_code_from_iban,
     identify_bank_from_iban,
     mask_iban,
     parse_iban,
@@ -40,10 +41,40 @@ def test_short_and_malformed_inputs_report_component_errors() -> None:
 
 
 def test_provider_code_extraction_rejects_short_and_non_turkish_inputs() -> None:
-    from turkiye_iban import find_bank_by_code, get_bank_code_from_iban
+    from turkiye_iban import find_bank_by_code
 
     assert get_bank_code_from_iban("TR28") is None
     assert get_bank_code_from_iban("DE280000109999000000000001") is None
     assert get_bank_code_from_iban("TR28ABC0109999000000000001") is None
     assert find_bank_by_code("") is None
     assert find_bank_by_code("123456") is None
+
+
+def test_oversized_inputs_are_rejected_without_normalization() -> None:
+    at_limit = "A" * 1_024
+    iban = "TR" + "0" * 1_023
+
+    assert format_iban(at_limit).replace(" ", "") == at_limit
+
+    parsed = parse_iban(iban)
+    assert parsed == {
+        "input": iban,
+        "normalized": "",
+        "formatted": "",
+        "country_code": "",
+        "check_digits": "",
+        "bank_code": "",
+        "reserve_digit": "",
+        "account_number": "",
+        "is_valid": False,
+        "errors": ["INVALID_LENGTH"],
+    }
+    assert not validate_turkish_iban(iban)
+    assert get_bank_code_from_iban(iban) is None
+    assert format_iban(iban) == ""
+    assert mask_iban(iban) == ""
+
+    identified = identify_bank_from_iban(iban)
+    assert identified["provider_code"] is None
+    assert identified["provider"] is None
+    assert identified["provider_status"] == "unknown"

@@ -6,7 +6,16 @@ from typing import Any
 from .providers import data_version, find_bank_by_code
 
 
+_MAX_INPUT_LENGTH = 1_024
+
+
+def _is_oversized_input(iban: str) -> bool:
+    return len(iban) > _MAX_INPUT_LENGTH
+
+
 def _normalize(iban: str) -> str:
+    if _is_oversized_input(iban):
+        return ""
     return re.sub(r"\s", "", iban).upper()
 
 
@@ -42,6 +51,20 @@ def _has_mod97_checksum(iban: str) -> bool:
 
 
 def parse_iban(iban: str) -> dict[str, Any]:
+    if _is_oversized_input(iban):
+        return {
+            "input": iban,
+            "normalized": "",
+            "formatted": "",
+            "country_code": "",
+            "check_digits": "",
+            "bank_code": "",
+            "reserve_digit": "",
+            "account_number": "",
+            "is_valid": False,
+            "errors": ["INVALID_LENGTH"],
+        }
+
     normalized = _normalize(iban)
     errors: list[str] = []
     if not normalized:

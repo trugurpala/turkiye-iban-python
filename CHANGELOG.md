@@ -2,6 +2,8 @@
 
 ## Yayınlanmamış
 
+- Ana istemci sözleşmesiyle uyumlu olarak 1.024 karakterden uzun IBAN girdileri
+  normalleştirilmeden `INVALID_LENGTH` ile reddedilir.
 - `turkiye-iban==0.1.6` PyPI Trusted Publisher ile yayımlandı; önbelleksiz
   temiz virtualenv kurulumu ve sentetik smoke testi doğrulandı.
 - README, yayınlama rehberi ve test raporu gerçek PyPI sürümü ile workflow

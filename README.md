@@ -21,6 +21,7 @@ maskeleme ve kuruluş kodu eşleştirmesi.
 - Beş haneli kuruluş kodunu çıkarır ve sabitlenmiş veriyle eşleştirir.
 - Bilinen ve bilinmeyen kuruluşları ayrı sonuçlarla bildirir.
 - IBAN'ı dörder karakterlik gruplara ayırır veya maskeleyerek gösterir.
+- Kaynak tüketimini sınırlamak için 1.024 karakterden uzun girdileri reddeder.
 - Veriyi runtime sırasında ağdan indirmez; `turkiye-iban` v0.2.1 release verisini kullanır.
 
 ## Ne yapmaz?
