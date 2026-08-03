@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Main data repository Discussions
+  - name: Genel kullanım ve ortak veri soruları
     url: https://github.com/trugurpala/turkiye-iban/discussions
-    about: Ask general data, schema, or cross-language questions.
-  - name: Security policy
-    url: https://github.com/trugurpala/turkiye-iban-python/blob/main/SECURITY.md
-    about: Report a security issue privately.
+    about: Genel veri, şema veya diller arası soruları burada konuşun.
+  - name: Güvenlik veya gizlilik bildirimi
+    url: https://github.com/trugurpala/turkiye-iban-python/security/advisories/new
+    about: Güvenlik açığı veya gerçek finansal veri ifşası için public issue açmayın.

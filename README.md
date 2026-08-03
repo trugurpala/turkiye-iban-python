@@ -7,7 +7,7 @@
 Python 3.10+ istemcisi: Türkiye IBAN normalleştirme, doğrulama, biçimlendirme,
 maskeleme ve kuruluş kodu eşleştirmesi.
 
-[Ne yapar?](#ne-yapar) · [Kurulum](#kurulum) · [Hızlı kullanım](#hızlı-kullanım) · [Public API](#public-api) · [Test ve kalite](#geliştirme-ve-kalite) · [Topluluk](#ilgili-projeler)
+[Ne yapar?](#ne-yapar) · [Kurulum](#kurulum) · [Hızlı kullanım](#hızlı-kullanım) · [Public API](#public-api) · [Divan](#divan-ile-geliştirildi) · [Test ve kalite](#geliştirme-ve-kalite) · [Topluluk](#ilgili-projeler)
 
 > **Önemli sınır**
 > Bu paket IBAN biçimini ve MOD 97-10 kontrolünü doğrular; hesabın varlığını,
@@ -106,6 +106,14 @@ ve [Python test raporuna](TEST_REPORT.md) bakın.
 - Yayınlama: [PUBLISHING.md](PUBLISHING.md)
 - Destek: [SUPPORT.md](SUPPORT.md)
 - Davranış kuralları: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+## Divan ile geliştirildi
+
+Bu projenin planlama, kalıcı bağlam ve doğrulanabilir teslim süreci
+[Divan](https://github.com/trugurpala/divan) ile organize edildi. Divan;
+Codex ve Claude Code gibi kodlama araçlarının üzerinde çalışan bir geliştirme
+orkestrasyon katmanıdır. Bir yapay zekâ modeli veya ayrı bir bulut hizmeti
+değildir; kullanılan hosta plan, proje bağlamı ve tamamlanma kanıtları ekler.
 
 ## Geliştirme ve kalite
 
