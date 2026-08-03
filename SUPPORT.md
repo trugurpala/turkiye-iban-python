@@ -1,11 +1,20 @@
 # Destek
 
-- Kullanım ve API: [README.md](README.md) ve [TEST_REPORT.md](TEST_REPORT.md)
-- PyPI release: [PUBLISHING.md](PUBLISHING.md)
-- Ortak veri ve şema: [ana repository](https://github.com/trugurpala/turkiye-iban)
-- Soru ve diller arası konular: [ana Discussions](https://github.com/trugurpala/turkiye-iban/discussions)
-- Hata bildirimi: [issue formları](https://github.com/trugurpala/turkiye-iban-python/issues/new/choose)
-- Güvenlik: [SECURITY.md](SECURITY.md); public issue açmayın
+Doğru kanalı seçmeniz yanıt ve çözüm süresini kısaltır:
 
-Destek talebinde gerçek IBAN, müşteri kaydı, hesap sahibi veya üretim logu
-paylaşmayın. Yeniden üretim için sentetik örnek ve sürüm bilgisi yeterlidir.
+| Konu | Kanal |
+| --- | --- |
+| Kurulum ve Python API kullanımı | [README](README.md) ve [TEST_REPORT](TEST_REPORT.md) |
+| Genel soru veya diller arası konu | [Ana GitHub Discussions](https://github.com/trugurpala/turkiye-iban/discussions) |
+| Tekrarlanabilir Python hatası | [Issue formları](https://github.com/trugurpala/turkiye-iban-python/issues/new/choose) |
+| Ortak veri veya şema | [Ana turkiye-iban deposu](https://github.com/trugurpala/turkiye-iban) |
+| Güvenlik açığı veya veri sızıntısı | [Özel GitHub Security Advisory](https://github.com/trugurpala/turkiye-iban-python/security/advisories/new) |
+| PyPI paket yayınlama | [PUBLISHING.md](PUBLISHING.md) |
+
+Bu proje bireysel IBAN, transfer, hesap sahibi, banka işlemi veya müşteri
+hizmeti desteği vermez. Hesabınızla ilgili sorular için doğrudan bankanızla
+iletişime geçin.
+
+Issue, Discussion, PR, log veya ekran görüntüsünde gerçek IBAN, müşteri kaydı
+ya da kişisel finansal veri paylaşmayın. Yeniden üretim için yalnız sentetik
+örnek, paket/Python sürümü ve beklenen/gerçekleşen davranış yeterlidir.
