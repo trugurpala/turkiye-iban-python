@@ -40,18 +40,18 @@ bankada gerçekten var olduğunu kanıtlamaz.
 
 ## Kurulum
 
-`turkiye-iban==0.1.6`, PyPI üzerinde doğrulanmış olarak yayımlandı. Normal
+`turkiye-iban==0.1.7`, PyPI üzerinde doğrulanmış olarak yayımlandı. Normal
 kurulum için sürümü sabitleyin:
 
 ```bash
-python -m pip install turkiye-iban==0.1.6
+python -m pip install turkiye-iban==0.1.7
 ```
 
 PyPI erişiminin uygun olmadığı, kapalı ağ veya artefact doğrulama senaryoları
 için aynı sürümün GitHub Release wheel dosyasını kullanabilirsiniz:
 
 ```bash
-python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.6/turkiye_iban-0.1.6-py3-none-any.whl
+python -m pip install https://github.com/trugurpala/turkiye-iban-python/releases/download/v0.1.7/turkiye_iban-0.1.7-py3-none-any.whl
 ```
 
 Güncel durum ve Trusted Publisher adımları için [PUBLISHING.md](PUBLISHING.md)
@@ -133,9 +133,9 @@ müşteri adı veya kişisel finansal veri issue, test veya PR içinde kullanmay
 
 ## Release
 
-Son doğrulanmış GitHub Release [v0.1.6](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.6)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.6`dır.
-`v0.1.6` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır.
-[TEST_REPORT.md](TEST_REPORT.md), `v0.1.6` için registry, artefact ve sentetik
+Son doğrulanmış GitHub Release [v0.1.7](https://github.com/trugurpala/turkiye-iban-python/releases/tag/v0.1.7)'dır; PyPI'daki son doğrulanmış paket sürümü `0.1.7`dir.
+`v0.1.7` assetleri ve bu sürümün GitHub Actions sonucu release sayfasındadır.
+[TEST_REPORT.md](TEST_REPORT.md), `v0.1.7` için artefact ve sentetik
 smoke testi kanıtını kaydeder.
 Release geçmişi [CHANGELOG.md](CHANGELOG.md) dosyasındadır.
 GitHub Release workflow'u yalnızca `v*.*.*` tag'lerinde arşiv üretir; PyPI
